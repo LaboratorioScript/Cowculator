@@ -1,0 +1,68 @@
+@font-face{
+    font-family: Valley;
+    src: url(../font/Stardew_Valley.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --cor-base: linear-gradient(#F9BB70, #E28F3D);
+    --cor-borda: linear-gradient(#D16B1F, #6B3710);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../img/fundo.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    align-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.titulo{
+    background-image: var(--cor-base); /*cor de fundo da letra gradiente*/
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /*deixa letra transparente e cor de fundo fica gradiente*/
+    font-family: "Inter", sans-serif; 
+    font-size: 1000%;
+    font-weight: 1000;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #6B3710;
+    padding-top: 5px;
+}
+
+.area_botao{  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.botao{
+    margin: 8%;
+    cursor: pointer;
+    width: 30%;
+    height: 30%;
+}
+
+.basica:hover{
+    height: 150%;
+}

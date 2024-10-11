@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/financeira.css">
+    <script src="../js/calculos.js" defer></script>
+    <title>Calculadora</title>
+</head>
+
+<header class="cabecalho">
+	<a class="voltar" href="../index.html">
+		<	
+	</a>
+	<img src="../img/inverter.png" alt="duas setas">
+</header>
+
+<body>
+	<div class="container">
+					<table>
+						<tr>
+							<td colspan="4">
+								<input type="text" id="display" readonly>
+							</td>
+						</tr>
+						<tr>
+							<td><button class="button-functions" id="valorReais" value="$">$</button></td>
+							<td><button class="calculatorButtons" id="cleanDisplay" value="C">C</td>
+							<td><button class="calculatorButtons" id="deleteDigit" value="CE">CE</td>
+                            <td><button class="calculatorButtons" id="num0" value="0">0</td>
+						</tr>
+						<tr>
+							<td><button class="button-functions" id="mes/ano" value="input"></button></td>
+							<td><button class="calculatorButtons" id="num7" value="7">7</td>
+							<td><button class="calculatorButtons" id="num8" value="8">8</td>
+							<td><button class="calculatorButtons" id="num9" value="9">9</td>
+						</tr>
+						<tr>
+							<td><button class="button-functions" id="valorJuros" value="%">%</button></td>
+							<td><button class="calculatorButtons" id="num4" value="4">4</td>
+							<td><button class="calculatorButtons" id="num5" value="5">5</td>
+							<td><button class="calculatorButtons" id="num6" value="6">6</td>
+							
+						</tr>
+						<tr>
+							<td><button class="calculatorButtons" id="result" value="=">=</button></td>
+							<td><button class="calculatorButtons" id="num1" value="1">1</td>
+							<td><button class="calculatorButtons" id="num2" value="2">2</td>
+							<td><button class="calculatorButtons" id="num3" value="3">3</td>
+
+							
+						</tr>
+						<!--<tr>
+                            
+                            <td><button class="calculatorButtons" id="result" value="=">=</td>
+						</tr>-->
+					</table>
+	</div>
+</body>
+
+</html>

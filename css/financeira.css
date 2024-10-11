@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: small;
+  color: #3f413d;
+  margin: 0;
+  padding: 0;
+
+}
+
+@font-face {
+  font-family: stardew;
+  src: url(../font/Stardew_Valley.ttf);
+} 
+
+:root{
+  --cor-base: linear-gradient(#F9BB70, #E28F3D);
+  --cor-escura: #6B3710;
+  --cor-inversa: linear-gradient(#D16B1F, #6B3710);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.3%;
+  
+  
+}
+
+body{
+  background-image: url(../img/fundocalculadora.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+
+.cabecalho{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1% 5%;
+}
+
+.voltar{
+  background-image: var(--cor-base);
+  font-family: stardew;
+  text-align: center;
+  align-content: center;
+  text-decoration: none;
+  color: black;
+  border: solid 2px var(--cor-escura); 
+  border-radius: 0.5rem;
+  align-self: center;
+  width: 5%;
+  height: 2rem;
+  transition: 0.2s;
+}
+
+
+.voltar:hover{
+  width: 5.5%;
+  height: 2.2rem;
+}
+
+#display {
+  background-image: var(--cor-base);
+  font-family: stardew;
+  font-size: 250%;
+  color: var(--cor-escura);
+  font-weight: 100;
+  padding: 15px;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: right;
+  height: 10vh;
+  align-self: center;
+  border: 8px solid;
+  border-image: var(--cor-inversa) 1;
+  margin-top: 6rem;
+  width: 95%;
+}
+
+.calculatorButtons{
+  width: 15rem;
+  height: 5.5rem;
+  border: none;
+  margin-right: 0.5rem;
+  margin-bottom: 0.9rem;
+  background-image: var(--cor-base);
+  border: solid 10px var(--cor-escura);
+  text-align: center;
+  font-size: 350%;
+  font-family: stardew;
+  color: var(--cor-escura);
+  border: 8px solid;
+  border-image: var(--cor-inversa) 1;
+  cursor: pointer;
+  
+}
+
+.calculatorButtons:active {
+  transform: translateY(0.1vh);
+  box-shadow: 0 2px #6B3710;
+}
+
+#cleanDisplay, #deleteDigit, #division, #multiplication, #subtraction, #sum, #result{
+  background-image: var(--cor-inversa);
+  border: solid 10px #F9BB70;
+  color: #F9BB70;
+  border: 8px solid;
+  border-image: var(--cor-base) 1;
+}
+
+#result{
+  height: 5.5rem;
+  width: 31rem;
+  
+}
+
+#num0{
+  width: 15rem;
+}
+
+.button-functions {
+  background-image: var(--cor-inversa);
+  
+  color: #F9BB70;
+  border: 8px solid;
+  border-image: var(--cor-base) 1;
+  width: 31rem;
+  height: 5.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.9rem;
+  text-align: left;
+  font-size: 350%;
+  font-family: stardew;
+  cursor: pointer;
+
+}
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+

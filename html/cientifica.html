@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/cientifica.css">
+    <script src="../js/basica.js" defer></script>
+    <title>Calculadora</title>
+</head>
+
+<header class="cabecalho">
+	<a class="voltar" href="../index.html">
+		<	
+	</a>
+	<img src="../img/inverter.png" alt="duas setas">
+</header>
+
+<body>
+	<div class="container">
+				<div class="calculator">
+
+					<table>
+						<tr>
+							<td colspan="4">
+								<input type="text" id="display" readonly>
+							</td>
+						</tr>
+						<tr>
+							<td><button class="calculatorButtons" id="cleanDisplay" value="C">C</td>
+							<td><button class="calculatorButtons" id="deleteDigit" value="CE">CE</td>
+							<td><button class="calculatorButtons" id="seno" value="seno">sen</td>
+							<td><button class="calculatorButtons" id="cosseno" value="cosseno">cos</td>
+                            <td><button class="calculatorButtons" id="tangente" value="tangente">tan</td>
+						</tr>
+						<tr>
+							<td><button class="calculatorButtons" id="num7" value="7">7</td>
+							<td><button class="calculatorButtons" id="num8" value="8">8</td>
+							<td><button class="calculatorButtons" id="num9" value="9">9</td>
+							<td><button class="calculatorButtons" id="raiz" value="√">²√</td>
+							<td><button class="calculatorButtons" id="raizn" value="√">√</td>
+						</tr>
+						<tr>
+							<td><button class="calculatorButtons" id="num4" value="4">4</td>
+							<td><button class="calculatorButtons" id="num5" value="5">5</td>
+							<td><button class="calculatorButtons" id="num6" value="6">6</td>
+							<td><button class="calculatorButtons" id="log" value="log">log</td>
+							<td><button class="calculatorButtons" id="divs" value="divs">1/x</td>
+							
+						</tr>
+						<tr>
+							<td><button class="calculatorButtons" id="num1" value="1">1</td>
+							<td><button class="calculatorButtons" id="num2" value="2">2</td>
+							<td><button class="calculatorButtons" id="num3" value="3">3</td>
+							<td><button class="calculatorButtons" id="pot2" value="pot2">x²</td>
+							<td rowspan="2"><button class="calculatorButtons" id="result" value="=">=</td>
+							
+						</tr>
+						<tr>
+                            <td><button class="calculatorButtons" id="num0" value="0">0</td>
+                            <td><button class="calculatorButtons" id="buraco" value="+/-">+/-</td>
+                            <td><button class="calculatorButtons" id="point" value=".">.</td>
+							<td><button class="calculatorButtons" id="pot" value="pot">x^y</td>
+						</tr>
+					</table>
+				</div>
+	</div>
+</body>
+
+</html>
