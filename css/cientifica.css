@@ -12,12 +12,18 @@
 @font-face {
   font-family: stardew;
   src: url(../font/Stardew_Valley.ttf);
-} 
+}
+
+@font-face{
+  font-family: minecraft;
+  src: url(../font/Minecraft.ttf);
+}
 
 :root{
   --cor-base: linear-gradient(#F9BB70, #E28F3D);
   --cor-escura: #6B3710;
   --cor-inversa: linear-gradient(#D16B1F, #6B3710);
+  --icone-info: #64E4E8;
 }
 
 .container {
@@ -44,26 +50,27 @@ body{
 .voltar{
   background-image: var(--cor-base);
   font-family: stardew;
+  font-size: 190%;
   text-align: center;
   align-content: center;
   text-decoration: none;
-  color: black;
+  color: #6B3710;
   border: solid 2px var(--cor-escura); 
   border-radius: 0.5rem;
   align-self: center;
-  width: 5%;
-  height: 2rem;
+  width: 8%;
+  height: 3rem;
   transition: 0.2s;
 }
 
 .voltar:hover{
-  width: 5.5%;
-  height: 2.2rem;
+  width: 10%;
+  height: 3.3rem;
 }
 
 #display {
   background-image: var(--cor-base);
-  font-family: stardew;
+  font-family: minecraft;
   font-size: 250%;
   color: var(--cor-escura);
   font-weight: 100;
@@ -100,7 +107,7 @@ body{
   box-shadow: 0 2px #6B3710;
 }
 
-#cleanDisplay, #deleteDigit, #division, #multiplication, #subtraction, #sum, #result{
+#cleanDisplay, #deleteDigit, #seno, #cosseno, #tangente, #raiz, #raizn, #log, #divs, #pot, #pot2, #result{
   background-image: var(--cor-inversa);
   border: solid 10px #F9BB70;
   color: #F9BB70;
@@ -109,8 +116,44 @@ body{
 }
 #result{
   height: 12rem;
+  font-family: minecraft;
+}
+
+ #subtraction, #sum, #buraco{
+  font-family: minecraft;  
+}
+
+#multiplication, #division{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
 }
 
 #num0{
-  width: 12rem;
+  width: 15rem;
+}
+
+.info-icon {
+  font-size: 0.7em;
+  position: relative;
+  top: -10px;
+  right: -30px;
+  cursor: pointer;
+  color: var(--icone-info);
+}
+/* Estilo do modal */
+.modal {
+  display: none; /* Oculto por padrão */
+  position: fixed;
+  z-index: 1000; /* Fica acima de outros elementos */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+  justify-content: center;
+  align-items: center;
+}
+.modal img {
+  max-width: 80%; /* Limita a largura da imagem */
+  max-height: 80%; /* Limita a altura da imagem */
 }

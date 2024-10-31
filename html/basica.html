@@ -8,58 +8,77 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/basica.css">
     <script src="../js/basica.js" defer></script>
-    <title>Calculadora</title>
+    <title>Calculadora basica</title>
 </head>
 
 <header class="cabecalho">
-	<a class="voltar" href="../index.html">	</a>
+	<a class="voltar" href="../index.html">Voltar</a>
 	<img src="../img/inverter.png" alt="duas setas">
 </header>
 
 <body>
-	<div class="container">
-				<div class="calculator">
+    <div class="container">
+        <div class="calculator">
+            <table>
+                <tr>
+                    <td colspan="4">
+                        <input type="text" id="display" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button class="calculatorButtons" id="cleanDisplay" value="C">C</button></td>
+                    <td><button class="calculatorButtons" id="deleteDigit" value="CE">CE</button></td>
+                    <td>
+                        <button class="calculatorButtons" id="division" value="/">&divide;
+                            <span class="info-icon" title="Divisão">🛈</span>
+                        </button>
+                    </td>
+                    <td>
+                        <button class="calculatorButtons" id="multiplication" value="*">&times;
+                            <span class="info-icon" title="Multiplicação">🛈</span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button class="calculatorButtons" id="num7" value="7">7</button></td>
+                    <td><button class="calculatorButtons" id="num8" value="8">8</button></td>
+                    <td><button class="calculatorButtons" id="num9" value="9">9</button></td>
+                    <td>
+                        <button class="calculatorButtons" id="subtraction" value="-">-
+                            <span class="info-icon" title="Subtração">🛈</span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button class="calculatorButtons" id="num4" value="4">4</button></td>
+                    <td><button class="calculatorButtons" id="num5" value="5">5</button></td>
+                    <td><button class="calculatorButtons" id="num6" value="6">6</button></td>
+                    <td>
+                        <button class="calculatorButtons" id="sum" value="+">+
+                            <span class="info-icon" title="Adição">🛈</span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button class="calculatorButtons" id="num1" value="1">1</button></td>
+                    <td><button class="calculatorButtons" id="num2" value="2">2</button></td>
+                    <td><button class="calculatorButtons" id="num3" value="3">3</button></td>
+                    <td rowspan="2"><button class="calculatorButtons" id="result" value="=">=</button></td>
+                </tr>
+                <tr>
+                    <td><button class="calculatorButtons" id="num0" value="0">0</button></td>
+                    <td><button class="calculatorButtons" id="buraco" value="+/-">+/-</button></td>
+                    <td><button class="calculatorButtons" id="point" value=".">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
 
-					<table>
-						<tr>
-							<td colspan="4">
-								<input type="text" id="display" readonly>
-							</td>
-						</tr>
-						<tr>
-							<td><button class="calculatorButtons" id="cleanDisplay" value="C">C</td>
-							<td><button class="calculatorButtons" id="deleteDigit" value="CE">CE</td>
-							<td><button class="calculatorButtons" id="division" value="/">&divide;</td>
-							<td><button class="calculatorButtons" id="multiplication" value="*">&times;</td>
-						</tr>
-						<tr>
-							<td><button class="calculatorButtons" id="num7" value="7">7</td>
-							<td><button class="calculatorButtons" id="num8" value="8">8</td>
-							<td><button class="calculatorButtons" id="num9" value="9">9</td>
-							<td><button class="calculatorButtons" id="subtraction" value="-">-</td>
-						</tr>
-						<tr>
-							<td><button class="calculatorButtons" id="num4" value="4">4</td>
-							<td><button class="calculatorButtons" id="num5" value="5">5</td>
-							<td><button class="calculatorButtons" id="num6" value="6">6</td>
-							<td><button class="calculatorButtons" id="sum" value="+">+</td>
-							
-						</tr>
-						<tr>
-							<td><button class="calculatorButtons" id="num1" value="1">1</td>
-							<td><button class="calculatorButtons" id="num2" value="2">2</td>
-							<td><button class="calculatorButtons" id="num3" value="3">3</td>
-							<td rowspan="2"><button class="calculatorButtons" id="result" value="=">=</td>
-							
-						</tr>
-						<tr>
-                            <td><button class="calculatorButtons" id="num0" value="0">0</td>
-                            <td><button class="calculatorButtons" id="buraco" value="+/-">+/-</td>
-                            <td><button class="calculatorButtons" id="point" value=".">.</td>
-						</tr>
-					</table>
-				</div>
-	</div>
+    <!-- Modal para exibir a imagem -->
+    <div class="modal" id="infoModal">
+        <img id="modalImage" src="" alt="Informação">
+    </div>
+
 </body>
 
 </html>

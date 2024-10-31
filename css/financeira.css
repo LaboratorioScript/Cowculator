@@ -13,12 +13,18 @@
 @font-face {
   font-family: stardew;
   src: url(../font/Stardew_Valley.ttf);
+}
+
+@font-face{
+  font-family: minecraft;
+  src: url(../font/Minecraft.ttf);
 } 
 
 :root{
   --cor-base: linear-gradient(#F9BB70, #E28F3D);
   --cor-escura: #6B3710;
   --cor-inversa: linear-gradient(#D16B1F, #6B3710);
+  --icone-info: #64E4E8;
 }
 
 .container {
@@ -26,9 +32,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 0.3%;
-  
-  
+  margin: 0.3%;  
 }
 
 body{
@@ -48,27 +52,27 @@ body{
 .voltar{
   background-image: var(--cor-base);
   font-family: stardew;
+  font-size: 190%;
   text-align: center;
   align-content: center;
   text-decoration: none;
-  color: black;
+  color: #6B3710;
   border: solid 2px var(--cor-escura); 
   border-radius: 0.5rem;
   align-self: center;
-  width: 5%;
-  height: 2rem;
+  width: 8%;
+  height: 3rem;
   transition: 0.2s;
 }
 
-
 .voltar:hover{
-  width: 5.5%;
-  height: 2.2rem;
+  width: 10%;
+  height: 3.3rem;
 }
 
 #display {
   background-image: var(--cor-base);
-  font-family: stardew;
+  font-family: minecraft;
   font-size: 250%;
   color: var(--cor-escura);
   font-weight: 100;
@@ -99,7 +103,6 @@ body{
   border: 8px solid;
   border-image: var(--cor-inversa) 1;
   cursor: pointer;
-  
 }
 
 .calculatorButtons:active {
@@ -118,30 +121,61 @@ body{
 #result{
   height: 5.5rem;
   width: 31rem;
-  
+  font-family: minecraft;
 }
 
 #num0{
   width: 15rem;
 }
 
-.button-functions {
+.input-functions {
   background-image: var(--cor-inversa);
-  
   color: #F9BB70;
   border: 8px solid;
   border-image: var(--cor-base) 1;
-  width: 31rem;
-  height: 5.5rem;
-  margin-right: 0.5rem;
-  margin-bottom: 0.9rem;
+  width: 82.5%;
   text-align: left;
   font-size: 350%;
   font-family: stardew;
   cursor: pointer;
-
 }
 
+.input-functions::placeholder{
+  color:#F9BB70;
+}
+
+tr{
+  align-self:center;
+}
+
+.input-functions::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+
+.info-icon {
+  font-size: 1.7em;
+  position: relative;
+  cursor: pointer;
+  color: var(--icone-info);
+  left: 38.5%;
+}
+/* Estilo do modal */
+.modal {
+  display: none; /* Oculto por padrão */
+  position: fixed;
+  z-index: 1000; /* Fica acima de outros elementos */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+  justify-content: center;
+  align-items: center;
+}
+.modal img {
+  max-width: 80%; /* Limita a largura da imagem */
+  max-height: 80%; /* Limita a altura da imagem */
+}
 
 
 
